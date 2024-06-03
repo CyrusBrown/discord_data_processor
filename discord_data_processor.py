@@ -45,7 +45,6 @@ if channeltype == "0":
 
     channelpicked = f"SERVER_{serverchoice}_{channelchoice}"
     messagepath = f"messages/c{serverlist[serverchoice][channelchoice]}/messages.json"
-    print(messagepath)
 
 
 elif channeltype == "1":
@@ -57,7 +56,6 @@ elif channeltype == "1":
     print(dmchoice)
     channelpicked = f"DM_{(dmchoice.split("#")[0])[1:]}"
     messagepath = f"messages/c{dmlist[dmchoice]}/messages.json"
-    print(messagepath)
 
 
 elif channeltype == "2":
@@ -68,7 +66,6 @@ elif channeltype == "2":
     groupchatchoice = choices[input("\n Which groupchat: ")]
     channelpicked = f"GROUPCHAT_{groupchatchoice}"
     messagepath = f"messages/c{groupchatlist[groupchatchoice]}/messages.json"
-    print(messagepath)
 
 
 with open (messagepath, "r", encoding='utf-8') as f:
